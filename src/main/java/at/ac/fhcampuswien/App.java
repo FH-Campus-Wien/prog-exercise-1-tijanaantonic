@@ -1,5 +1,6 @@
 package at.ac.fhcampuswien;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class App {
@@ -7,21 +8,61 @@ public class App {
     //todo Task 1
     public void sayHelloWorld(){
         // input your solution here
+        System.out.println("Hello World!");
     }
 
     //todo Task 2
     public void helloRobot(){
         // input your solution here
+        System.out.println("0123456789012345678901");
+                System.out.println("         __     ");
+                System.out.println(" _(\    |@@|");
+                System.out.println("(__/\__ \--/ __");
+                System.out.println("   \___|----|  |   __");
+                System.out.println("       \ }{ /\ )_ / _\");
+                System.out.println("       /\__/\ \__O  (__");
+                System.out.println("      (--/\--)    \__/");
+                System.out.println("      _)(  )(_");
+                System.out.println("     ´___,,___´");
     }
 
     //todo Task 3
     public void sumOfLiterals(){
         // input your solution here
+        char a = 'Z';
+        int b = 0xface;
+        int c = 012;
+        long d = 80L ;
+        float e = 44e-1f ;
+        float f = 5.5f ;
+        double g = 8.88e1 ;
+        double h = 99.9 ;
+
+        int myint = (int) h;
+
+        int myint1 = (int) g;
+        int myint2 = (int) f;
+        int myint3 = (int) e;
+        int myint4 = (int) d;
+
+        System.out.println(myint+myint1+myint2+myint3+myint4+a+b+c) ;
+
+
+
+
     }
 
     //todo Task 4
     public void addTwoNumbers(){
         // input your solution here
+        Scanner scanner = new Scanner(System.in);
+
+
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+
+        System.out.println(y+x) ;
+
     }
 
     //todo Task 5
@@ -32,16 +73,85 @@ public class App {
     //todo Task 6
     public void compareTwoNumbers(){
         // input your solution here
+        Scanner scanner = new Scanner(System.in);
+
+        int n1 = scanner.nextInt();
+        int n2 = scanner.nextInt();
+
+        if (n1 > n2) {
+            System.out.println("n1: n2: n1 > n2");
+        } else if (n2 > n1) {
+            System.out.println("n1: n2: n2 > n1");
+        } else if (n1 == n2) {
+            System.out.println("n1: n2: n1 == n2");
+        }else {
+            System.out.println(" OUT OF REQUEST! ");
+        }
+
     }
 
     //todo Task 7
     public void ratingSalesPerson(){
         // input your solution here
+
+        Scanner scanner = new Scanner (System.in);
+
+        System.out.print("Enter annual Revenue: ");
+        int mymanbroke=scanner.nextInt();
+
+        if (mymanbroke < 0 || mymanbroke >= 100000) {
+            System.out.println("Invalid Revenue");
+        } else if (0 <= mymanbroke && mymanbroke < 2000) {
+            System.out.println("Poor Sales Revenue");
+        } else if (20000 <= mymanbroke && mymanbroke < 50000) {
+
+            System.out.println("Average Sales Revenue");
+        } else if (50000 <= mymanbroke && mymanbroke < 8000) {
+            System.out.println("Good Sales Revenue");
+        } else if (80000 <= mymanbroke && mymanbroke < 100000) {
+            System.out.println("Excellent Sales Revenue");
+        }else {
+            System.out.println("OUT OF REQUEST!");
+        }
+
     }
 
     //todo Task 8
     public void getCommissionRate(){
         // input your solution here
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter CommissionClass: ");
+        int a = scanner.nextInt();
+
+        float b = (float) a;
+
+        switch (a)  {
+            case 1:
+                b = b / 100;
+
+                System.out.println("Your Commission Rate was set to " + b);
+                break;
+            case 2:
+                b = b / 100;
+
+                System.out.println("Your Commission Rate was set to " + b);
+                break;
+            case 3:
+                b = b / 100;
+
+                System.out.println("Your Commission Rate was set to " + b);
+                break;
+            case 4:
+                b = b / 100;
+
+                System.out.println("Your Commission Rate was set to " + b);
+                break;
+            default:
+                b = b*0;
+
+                System.out.println("Your Commission Rate was set to " + b);
+        }
     }
 
     //todo Task 9
@@ -52,6 +162,16 @@ public class App {
     //todo Task 10
     public void transposedNumbers(){
         // input your solution here
+        System.out.print("Number: ");
+        Scanner input = new Scanner(System.in);
+        String number = input.next();
+
+        for(int i = number.length() - 1; i>=0; i--)
+        {
+            System.out.print(number.charAt(i));
+        }
+        System.out.println();
+
     }
 
 
